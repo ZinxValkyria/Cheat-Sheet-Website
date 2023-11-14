@@ -1,0 +1,104 @@
+/* Global styles */
+
+/* Apply a box-sizing border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Apply a global font and set the base font size */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Center an element horizontally and vertically */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply a max-width and center an element horizontally */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add padding to the top and bottom of an element */
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Add margin to the top and bottom of an element */
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Add a border to the bottom of an element */
+.border-b {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Add background color and text color to an element */
+.bg-blue-500 {
+    background-color: #3490dc;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Add a box shadow to an element */
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a hover effect to an element */
+.hover\:underline:hover {
+    text-decoration: underline;
+}
+
+/* Responsive utility classes */
+@media (max-width: 767px) {
+    .sm\:text-lg {
+        font-size: 18px;
+    }
+}
+
+/* Add a fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Add a bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce {
+    animation: bounce 1s ease infinite;
+}
+
+/* Additional custom styles go here */

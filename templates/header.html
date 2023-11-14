@@ -1,0 +1,26 @@
+<!-- header.html -->
+
+<nav class="bg-blue-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Brand/logo -->
+        <div class="text-white font-bold text-xl">
+            Your Website
+        </div>
+
+        <!-- Navigation Links with Dropdown -->
+        <ul class="flex space-x-4">
+            <li><a href="/" class="text-white">Home</a></li>
+            <li><a href="projects" class="text-white">Projects</a></li>
+            <li class="relative group">
+                <a href="Cheatsheets" class="text-white">Cheatsheets</a>
+                <!-- Dropdown Content -->
+                <ul class="absolute hidden bg-white text-blue-500 border border-blue-500 mt-2 space-y-2">
+                    <li><a href="python" class="block px-4 py-2">Python</a></li>
+                    <li><a href="terraform" class="block px-4 py-2">Terraform</a></li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </li>
+            <li><a href="contact" class="text-white">Contact</a></li>
+        </ul>
+    </div>
+</nav>
